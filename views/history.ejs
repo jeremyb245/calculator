@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation History</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Calculation History</h1>
+    <% if (calculations && calculations.length > 0) { %>
+        <table border="1">
+            <tr>
+                <th>Calculation ID</th>
+                <th>Number 1</th>
+                <th>Number 2</th>
+                <th>Operation</th>
+                <th>Result</th>
+                <th>Action</th>
+            </tr>
+            <% calculations.forEach(calculation => { %>
+                <tr>
+                    <td><%= calculation.id %></td>
+                    <td><%= calculation.num1 %></td>
+                    <td><%= calculation.num2 %></td>
+                    <td><%= calculation.operation %></td>
+                    <td><%= calculation.result %></td>
+                    <td>
+                        <form action="/history/<%= calculation.id %>/delete" method="post">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            <% }); %>
+        </table>
+    <% } else { %>
+        <p>No calculation history available.</p>
+    <% } %>
+    <h2><a href="/">Return To Calculator</a></h2>
+</body>
+</html>
+
