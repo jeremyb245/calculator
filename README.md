@@ -14,7 +14,7 @@ This is a simple calculator web application built with Node.js and Express.js. I
 
 4. Create a `.env` file in the root directory and define your MySQL database connection details:
 
-DB_Host=localhost
+DB_Host=localhost</br>
 DB_USER=your_mysql_username
 
 
