@@ -16,8 +16,8 @@ This is a simple calculator web application built with Node.js and Express.js. I
 
     DB_Host=localhost</br>
     DB_USER=your_mysql_username</br>
-    DB_PASSWORD=your_password
-    DB_NAME=calculator_db
+    DB_PASSWORD=your_password</br>
+    DB_NAME=calculator_db</br>
 
 
 6. Create the MySQL database and table using the provided SQL script.
