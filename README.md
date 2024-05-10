@@ -15,10 +15,12 @@ This is a simple calculator web application built with Node.js and Express.js. I
 4. Create a `.env` file in the root directory and define your MySQL database connection details:
 
     DB_Host=localhost</br>
-    DB_USER=your_mysql_username
+    DB_USER=your_mysql_username</br>
+    DB_PASSWORD=your_password
+    DB_NAME=calculator_db
 
 
-5. Create the MySQL database and table using the provided SQL script.
+6. Create the MySQL database and table using the provided SQL script.
 
     CREATE DATABASE calculator_db;
 
@@ -33,11 +35,11 @@ This is a simple calculator web application built with Node.js and Express.js. I
     );
 
 
-6. Start the application: In the root directory run: node app.js
+7. Start the application: In the root directory run: node app.js
 
 
 
-7. Open your web browser and navigate to `http://localhost:3000` to access the calculator.
+8. Open your web browser and navigate to `http://localhost:3000` to access the calculator.
 
 How to use:
 - Enter the first number in the "Enter first number" input field.
