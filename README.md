@@ -25,11 +25,11 @@ This is a simple calculator web application built with Node.js and Express.js. I
     USE calculator_db;
 
     CREATE TABLE calculations (</br>
-   		id INT AUTO_INCREMENT PRIMARY KEY,</br>
-        num1 FLOAT NOT NULL,</br>
-        num2 FLOAT NOT NULL,</br>
-        operation ENUM('add', 'subtract', 'multiply', 'divide') NOT NULL,</br>
-        result FLOAT NOT NULL</br>
+   		    id INT AUTO_INCREMENT PRIMARY KEY,</br>
+            num1 FLOAT NOT NULL,</br>
+            num2 FLOAT NOT NULL,</br>
+            operation ENUM('add', 'subtract', 'multiply', 'divide') NOT NULL,</br>
+            result FLOAT NOT NULL</br>
     );
 
 
