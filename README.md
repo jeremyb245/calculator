@@ -20,20 +20,20 @@ This is a simple calculator web application built with Node.js and Express.js. I
 
 5. Create the MySQL database and table using the provided SQL script.
 
-CREATE DATABASE calculator_db;
+    CREATE DATABASE calculator_db;
 
-USE calculator_db;
+    USE calculator_db;
 
-CREATE TABLE calculations (</br>
-    id INT AUTO_INCREMENT PRIMARY KEY,</br>
-    num1 FLOAT NOT NULL,</br>
-    num2 FLOAT NOT NULL,</br>
-    operation ENUM('add', 'subtract', 'multiply', 'divide') NOT NULL,</br>
-    result FLOAT NOT NULL</br>
-);
+    CREATE TABLE calculations (</br>
+        id INT AUTO_INCREMENT PRIMARY KEY,</br>
+        num1 FLOAT NOT NULL,</br>
+        num2 FLOAT NOT NULL,</br>
+        operation ENUM('add', 'subtract', 'multiply', 'divide') NOT NULL,</br>
+        result FLOAT NOT NULL</br>
+    );
 
 
-6. Start the application: In the project directory run: node app.js
+6. Start the application: In the root directory run: node app.js
 
 
 
