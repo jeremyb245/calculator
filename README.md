@@ -14,8 +14,8 @@ This is a simple calculator web application built with Node.js and Express.js. I
 
 4. Create a `.env` file in the root directory and define your MySQL database connection details:
 
-DB_Host=localhost</br>
-DB_USER=your_mysql_username
+    DB_Host=localhost</br>
+    DB_USER=your_mysql_username
 
 
 5. Create the MySQL database and table using the provided SQL script.
@@ -24,12 +24,12 @@ CREATE DATABASE calculator_db;
 
 USE calculator_db;
 
-CREATE TABLE calculations (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    num1 FLOAT NOT NULL,
-    num2 FLOAT NOT NULL,
-    operation ENUM('add', 'subtract', 'multiply', 'divide') NOT NULL,
-    result FLOAT NOT NULL
+CREATE TABLE calculations (</br>
+    id INT AUTO_INCREMENT PRIMARY KEY,</br>
+    num1 FLOAT NOT NULL,</br>
+    num2 FLOAT NOT NULL,</br>
+    operation ENUM('add', 'subtract', 'multiply', 'divide') NOT NULL,</br>
+    result FLOAT NOT NULL</br>
 );
 
 
